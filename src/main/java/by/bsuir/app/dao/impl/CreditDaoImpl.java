@@ -53,6 +53,7 @@ public class CreditDaoImpl implements CreditDao {
         }catch (EmptyObjectException e)
         {session.close();
         return false;}
+        return true;
     }
 
     @Override

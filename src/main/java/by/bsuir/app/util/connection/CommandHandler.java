@@ -1,9 +1,11 @@
 package by.bsuir.app.util.connection;
+
 import by.bsuir.app.dao.*;
 import by.bsuir.app.dao.impl.*;
-
-import by.bsuir.app.entity.*;
+import by.bsuir.app.entity.Account;
+import by.bsuir.app.entity.Contract;
 import by.bsuir.app.exception.DAOException;
+import by.bsuir.app.service.snapshot.Manipulator;
 import by.bsuir.app.util.constants.Status;
 import lombok.extern.log4j.Log4j2;
 
@@ -25,6 +27,7 @@ public class CommandHandler {
     private static final CreditDao credit = new CreditDaoImpl();
     private static final EmployeeDao employee = new EmployeeDaoImpl();
     private static final UserDao user = new UserDaoImpl();
+    private static final Manipulator manipulator = new Manipulator();
 
     public static Object execute(Commands command, Object obj) {
         Object response = null;
@@ -54,13 +57,13 @@ public class CommandHandler {
                 //case ADD_ANSWER_ON_QUESTION -> feedbackDao.saveAnswer((Feedback) obj);
                // case GET_ALL_MODELS_GROUPED_BY_QUANTITY -> carDao.findAllGroupedByQuantity();
               //  case SAVE_CAR_DATA_LOCAL_STORAGE -> manipulator.saveObjectInMemory(new Car() );
-                case RESTORE_CAR_DATA_LOCAL_STORAGE -> manipulator.getObjectFromMemory(new Car() );
+                case RESTORE_CONTRACT_DATA_LOCAL_STORAGE -> manipulator.getObjectFromMemory(new Contract() );
                // case DELETE_CAR_BY_VIN -> carDao.deleteByVIN((String) obj);
                 case GET_AGE_PERCENT_PROPORTION -> personalData.findAgePercentProportion();
                 default -> defaultBranch(command);
 
             };
-        } catch (ClassCastException | MessagingException | DAOException e) {
+        } catch (ClassCastException  e) {
             log.info(e.getMessage());
             e.printStackTrace();
         }

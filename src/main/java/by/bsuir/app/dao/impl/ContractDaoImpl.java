@@ -127,16 +127,16 @@ public class ContractDaoImpl implements ContractDao {
 
     @Override
     public boolean save(Contract contract) {
-    try{
-        if(contract ==null)throw new EmptyObjectException();
-        session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        session.save(contract);
-        session.getTransaction().commit();
-        session.close();
-    }catch (EmptyObjectException e) {
-        return false;
-    }
+        try{
+            if(contract ==null)throw new EmptyObjectException();
+            session = HibernateUtil.getSessionFactory().openSession();
+            session.beginTransaction();
+            session.save(contract);
+            session.getTransaction().commit();
+            session.close();
+        }catch (EmptyObjectException e) {
+            return false;
+        }
         return true;
     }
 }
