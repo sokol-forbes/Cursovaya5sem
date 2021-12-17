@@ -3,6 +3,7 @@ package by.bsuir.app.util.connection;
 public enum Commands {
     CLOSE_CONNECTION,
     USER_ADD_OR_UPDATE,
+    ACCOUNT_ADD_OR_UPDATE,
     DELETE_USER,
     DELETE_USER_BY_ID,
     GET_ALL_USERS,

@@ -1,7 +1,12 @@
 package by.bsuir.app.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Data
@@ -9,8 +14,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 @Table(name = "personal_data", schema = "bank")
-public class PersonalData extends BaseEntity {
-
+public class PersonalData extends BaseEntity implements Serializable {
+    static final long serialVersionUID = 42L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,6 +1,9 @@
 package by.bsiur.app.entity;
 
-public class Credit extends BaseEntity{
+import java.io.Serializable;
+
+public class Credit extends BaseEntity implements Serializable {
+    static final long serialVersionUID = 42L;
     private Long id;
     private String name;
     private Double percents;

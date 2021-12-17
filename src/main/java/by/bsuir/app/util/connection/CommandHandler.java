@@ -4,12 +4,10 @@ import by.bsuir.app.dao.*;
 import by.bsuir.app.dao.impl.*;
 import by.bsuir.app.entity.Account;
 import by.bsuir.app.entity.Contract;
-import by.bsuir.app.exception.DAOException;
+import by.bsuir.app.entity.User;
 import by.bsuir.app.service.snapshot.Manipulator;
 import by.bsuir.app.util.constants.Status;
 import lombok.extern.log4j.Log4j2;
-
-import javax.mail.MessagingException;
 
 import static by.bsuir.app.util.constants.ConstantsMSG.INCORRECT_VALUE_MSG;
 
@@ -28,6 +26,7 @@ public class CommandHandler {
     private static final EmployeeDao employee = new EmployeeDaoImpl();
     private static final UserDao user = new UserDaoImpl();
     private static final Manipulator manipulator = new Manipulator();
+    private static final UserDao userDao = new UserDaoImpl();
 
     public static Object execute(Commands command, Object obj) {
         Object response = null;
@@ -35,7 +34,8 @@ public class CommandHandler {
         //TODO COMMAND
         try {
             response = switch (command) {
-                case USER_ADD_OR_UPDATE -> accountDao.saveOrUpdate((Account) obj);
+                case USER_ADD_OR_UPDATE -> userDao.saveOrUpdate((User) obj);
+                case ACCOUNT_ADD_OR_UPDATE ->accountDao.saveOrUpdate((Account) obj);
                 case AUTHORISATION -> accountDao.auth((Account) obj);
                 case DELETE_USER -> accountDao.delete((Account) obj);
                 case DELETE_USER_BY_ID -> accountDao.deleteById((Long) obj);
@@ -43,7 +43,7 @@ public class CommandHandler {
                 case GET_ALL_USERS -> accountDao.findAll();
                 case GET_USER_BY_LOGIN -> accountDao.findByLogin((String) obj);
                 //case PASSWORD_RECOVERY -> accountDao.resetPassword((Account) obj);
-                case REGISTRATION -> accountDao.registration((Account) obj);
+                case REGISTRATION -> userDao.registration((User) obj);
                // case GET_LAUNCHES_COUNT_DATA -> historyLogDao.findAllGropedByDate();
                // case GET_ALL_USER_LAUNCHES -> historyLogDao.findAllUserLaunches();
               //  case ADD_NEW_CAR, CAR_ADD_OR_UPDATE -> carDao.saveOrUpdate((Car) obj);

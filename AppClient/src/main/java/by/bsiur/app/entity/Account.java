@@ -3,6 +3,7 @@ package by.bsiur.app.entity;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Data
@@ -10,7 +11,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Account extends BaseEntity{
+public class Account extends BaseEntity implements Serializable {
+    static final long serialVersionUID = 42L;
     Long id;
     String login;
     String password;

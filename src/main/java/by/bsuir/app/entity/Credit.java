@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Data
@@ -13,7 +14,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 @Table(name = "credit", schema = "bank")
-public class Credit extends BaseEntity{
+public class Credit extends BaseEntity implements Serializable {
+    static final long serialVersionUID = 42L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;

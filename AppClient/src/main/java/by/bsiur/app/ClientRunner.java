@@ -1,6 +1,6 @@
 package by.bsiur.app;
-
 import by.bsiur.app.util.constants.Paths;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,6 +14,7 @@ import java.util.Objects;
 public class ClientRunner extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(Paths.WindowLoading)));
             primaryStage.initStyle(StageStyle.UNDECORATED);
@@ -25,7 +26,11 @@ public class ClientRunner extends Application {
         }
     }
 
+
     public static void main(String[] args) {
         launch(args);
+
     }
+
 }
+

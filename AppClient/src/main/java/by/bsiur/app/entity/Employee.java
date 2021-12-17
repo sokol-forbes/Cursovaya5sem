@@ -1,8 +1,10 @@
 package by.bsiur.app.entity;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Employee extends BaseEntity{
+public class Employee extends BaseEntity implements Serializable {
+    static final long serialVersionUID = 42L;
     private Long id;
     private List<Contract> contracts;
     private PersonalData personalData;

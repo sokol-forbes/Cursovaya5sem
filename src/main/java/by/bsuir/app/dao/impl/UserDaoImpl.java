@@ -1,6 +1,7 @@
 package by.bsuir.app.dao.impl;
 
 import by.bsuir.app.dao.UserDao;
+import by.bsuir.app.entity.Account;
 import by.bsuir.app.entity.User;
 import by.bsuir.app.util.HibernateUtil;
 import org.hibernate.Session;
@@ -77,4 +78,10 @@ public class UserDaoImpl implements UserDao {
     public List<User> findAllByCriteria(String field) {
         return null;
     }
+
+    @Override
+    public boolean registration(User user) {
+        return false;
+    }
+
 }

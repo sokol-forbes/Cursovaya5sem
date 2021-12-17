@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.sql.Date;
 
 @Entity
@@ -14,7 +15,8 @@ import java.sql.Date;
 @NoArgsConstructor
 @Builder
 @Table(name = "contract", schema = "bank")
-public class Contract extends BaseEntity{
+public class Contract extends BaseEntity implements Serializable {
+    static final long serialVersionUID = 42L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -25,8 +27,9 @@ public class Contract extends BaseEntity{
     @JoinColumn(name = "credit_id")
     @NotNull
     Credit credit;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
-    @NotNull
-    User user;
+
+    @OneToMany
+    @JoinColumn(name = "employee_id")
+    Employee employee;
+
 }

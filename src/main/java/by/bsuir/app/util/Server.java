@@ -1,21 +1,16 @@
 package by.bsuir.app.util;
 
-import lombok.extern.log4j.Log4j2;
 
 import by.bsuir.app.util.connection.ClientHandler;
 import lombok.extern.log4j.Log4j2;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.BindException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
-import java.util.Objects;
-import java.util.Properties;
 
 import static by.bsuir.app.ServerRunner.*;
-import static by.bsuir.app.util.constants.Constants.FILE_PROPERTIES_PATH;
 import static by.bsuir.app.util.constants.ConstantsMSG.*;
 
 @Log4j2

@@ -2,6 +2,7 @@ package by.bsuir.app.service.impl;
 
 import by.bsuir.app.dao.AccountDao;
 import by.bsuir.app.entity.Account;
+import by.bsuir.app.entity.User;
 import by.bsuir.app.entity.enums.Role;
 import by.bsuir.app.service.AccountService;
 
@@ -44,6 +45,7 @@ public class AccountServiceImpl implements AccountService {
         }
         return false;
     }
+
 
 
 }
