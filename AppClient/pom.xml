@@ -4,16 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>AppClient</artifactId>
+    <groupId>by.bsuir.app</groupId>
+    <artifactId>MyAppClient</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
+        <jdk.version>16.0.2</jdk.version>
+
         <lombok.version>1.18.22</lombok.version>
         <javafx.version>18-ea+6</javafx.version>
+
     </properties>
+
     <dependencies>
         <!--    Lombok    -->
         <dependency>
@@ -74,14 +79,59 @@
             <artifactId>layout</artifactId>
             <version>7.0.4</version>
         </dependency>
+
     </dependencies>
+
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                    </configuration>
+                </plugin>
+
+                <!-- Make this jar executable -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <configuration>
+                        <!-- DO NOT include log4j.properties file in your Jar -->
+                        <!--                        <excludes>-->
+                        <!--                            <exclude>**/log4j.properties</exclude>-->
+                        <!--                        </excludes>-->
+                        <archive>
+                            <manifest>
+                                <!-- Jar file entry point -->
+                                <mainClass>by.bsuir.app.ClientRunner</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>2.4.1</version>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>shade</goal>
+                            </goals>
+                            <configuration>
+                                <transformers>
+                                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                        <mainClass>by.bsuir.app.ClientRunner</mainClass>
+                                    </transformer>
+                                </transformers>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

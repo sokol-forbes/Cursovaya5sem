@@ -1,0 +1,68 @@
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 01:56:55 - Connection refused: connect 
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:07:38 - Connection refused: connect 
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:07:41 - Connection refused: connect 
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:07:44 - Connection refused: connect 
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:07:47 - Connection refused: connect 
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:07:50 - Connection refused: connect 
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:22:02 - Connection refused: connect 
+b.b.a.u.c.Phone [INFO ] 00:36:29 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+b.b.a.c.SingInController [ERROR] 00:36:29 - Auth has failed. - null
+b.b.a.c.o.LoadingController$SplashScreen [ERROR] 00:37:17 - Connection refused: connect 
+b.b.a.u.c.Phone [INFO ] 00:37:20 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+b.b.a.u.c.Phone [INFO ] 00:37:22 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 00:37:22 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 00:38:15 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+b.b.a.u.c.Phone [INFO ] 00:38:16 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 00:38:16 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 00:38:47 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+b.b.a.u.c.Phone [INFO ] 00:38:48 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 00:38:48 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.s.GeneralFuncWindow [ERROR] 04:23:26 - Connection reset by peer
+b.b.a.u.c.Phone [INFO ] 04:31:32 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 04:31:33 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 04:31:33 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 04:32:32 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 04:32:33 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 04:32:33 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 04:33:27 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 04:33:27 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 04:33:27 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 05:03:57 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 05:03:58 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 05:03:58 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:09:37 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:09:38 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 08:09:38 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:10:46 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:10:49 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 08:10:49 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:11:26 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:11:27 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 08:11:27 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:11:52 - REQUEST: AUTHORISATION : Account(id=null, login=11, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:11:53 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 08:11:53 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:13:39 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:13:40 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 08:13:40 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:14:46 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:14:47 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 08:14:47 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 08:16:01 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:16:02 - RESPONSE: OK : ADMIN
+b.b.a.u.c.Phone [INFO ] 08:24:51 - REQUEST: AUTHORISATION : Account(id=null, login=2, password=2, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:24:53 - RESPONSE: OK : USER
+b.b.a.u.c.Phone [INFO ] 08:28:37 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:28:38 - RESPONSE: OK : ADMIN
+b.b.a.u.c.Phone [INFO ] 08:28:42 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:28:42 - RESPONSE: OK : ADMIN
+b.b.a.u.c.Phone [INFO ] 08:29:04 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 08:29:04 - RESPONSE: OK : ADMIN
+b.b.a.u.c.Phone [INFO ] 09:45:53 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 09:45:54 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 09:45:54 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 09:46:14 - REQUEST: PASSWORD_RECOVERY : Account(id=null, login=1, password=, email=1, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 09:48:06 - REQUEST: AUTHORISATION : Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)
+b.b.a.u.c.Phone [INFO ] 09:48:06 - RESPONSE: OK : UNREGISTERED
+b.b.a.c.SingInController [ERROR] 09:48:06 - Auth has failed. - Неверный логин или пароль. Повторите попытку
+b.b.a.u.c.Phone [INFO ] 09:48:45 - REQUEST: REGISTRATION : Account(id=null, login=sokol, password=123456, email=sasha.sokolovsky01@gmail.com, role=null, isBlocked=false, personalDataByPassportId=null, logs=null)

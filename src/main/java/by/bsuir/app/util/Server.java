@@ -1,6 +1,5 @@
 package by.bsuir.app.util;
 
-
 import by.bsuir.app.util.connection.ClientHandler;
 import lombok.extern.log4j.Log4j2;
 
@@ -18,7 +17,7 @@ public class Server implements Runnable {
 
     private static volatile boolean isActive = true;
     private static final ThreadGroup threadGroup = new ThreadGroup("mainGroup");
-    private static final FilePropertyReader p = new FilePropertyReader();
+    private static final PropertyReader p = new PropertyReader();
 
     @Override
     public void run() {

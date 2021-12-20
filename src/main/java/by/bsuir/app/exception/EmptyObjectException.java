@@ -1,4 +1,4 @@
 package by.bsuir.app.exception;
 
-public class EmptyObjectException  extends Exception{
+public class EmptyObjectException extends Exception{
 }

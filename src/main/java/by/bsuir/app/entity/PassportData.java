@@ -1,41 +1,39 @@
 package by.bsuir.app.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.sql.Date;
+import java.util.Collection;
+import java.util.Objects;
 
 @Entity
+@Table(name = "personal_data")
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Table(name = "passport_data", schema = "bank")
-public class PassportData extends BaseEntity implements Serializable {
-    static final long serialVersionUID = 42L;
+public class PassportData extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    @Column(name = "code_of_issuing_state")
-    String codeOfIssuingState;
-    @Column(name = "passport_number")
-    String passportNumber;
+    private Long id;
+    private String name;
+    private String surname;
+    private String thirdname;
+    private Integer age;
+    private String gender;
+
+    @Column(name = "pass_number")
+    private String passNumber;
+
+    @Column(name = "iden_number")
+    private String idenNumber;
+
     @Column(name = "date_of_birth")
-    Date dateOfBirth;
-    @Column(name = "identification_number")
-    String identificationNumber;
-    @Column(name = "place_of_birth")
-    String placeOfBirth;
+    private Date dateOfBirth;
+
     @Column(name = "date_of_issue")
-    Date dateOfIssue;
-    @Column(name = "date_of_expiry")
-    Date dateOfExpiry;
-    String authority;
+    private Date dateOfIssue;
 
-
+    @Column(name = "date_of_expirity")
+    private Date dateOfExpirity;
 
 }

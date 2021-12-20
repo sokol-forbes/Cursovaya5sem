@@ -1,19 +1,18 @@
 package by.bsuir.app;
 
-import by.bsuir.app.util.Server;
 import by.bsuir.app.util.constants.ConstantsMSG;
+import by.bsuir.app.util.Server;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static by.bsuir.app.util.constants.ConstantsMSG.*;
 
+
 @Log4j2
 public class ServerRunner {
-    private final Logger LOGGER = LogManager.getLogger(this.getClass().getName());
+
     private static boolean isOn = true;
     private static Thread serverThread = null;
     private static final AtomicInteger countOfConnected = new AtomicInteger(0);
@@ -29,7 +28,8 @@ public class ServerRunner {
         while (isOn) {
 
             try {
-                answerString = scanner.nextLine();
+                answerString = "1";
+//                answerString = scanner.nextLine();
                 answer = Integer.parseInt(answerString);
 
                 switch (answer) {
@@ -37,7 +37,11 @@ public class ServerRunner {
                         Server server = new Server();
                         serverThread = new Thread(server);
                         serverThread.start();
-
+                        try {
+                            serverThread.join();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                     case 2 -> log.info(CURRENT_CONNECTION_MSG + getCountOfConnected());
 //                    case 3 -> {
@@ -54,12 +58,11 @@ public class ServerRunner {
 //                    }
                     default -> throw new NumberFormatException();
                 }
-                break;
+//                break;
             } catch (NumberFormatException e) {
                 System.out.println(INCORRECT_VALUE_RU_MSG + answerString);
             }
         }
-
     }
 
     private static void showMenu () {
@@ -81,5 +84,4 @@ public class ServerRunner {
     public synchronized static int getCountOfConnected() {
         return countOfConnected.get();
     }
-
 }

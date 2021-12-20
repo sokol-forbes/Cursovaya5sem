@@ -1,17 +1,18 @@
 package by.bsuir.app.service;
 
 import by.bsuir.app.entity.Account;
-import by.bsuir.app.entity.User;
 
 import java.util.List;
 
 public interface UserService {
+    boolean auth(Account account);
+    Account findByLogin(String login);
 
-    User findByAccount(Account account);
+    List<Account> findAllByCriteria(String field);
 
-    List<User> findAllByCriteria(String field);
+    boolean resetPassword(Account accountFromUser);
 
+    boolean registration(Account account);
 
-
-    boolean registration(User user);
+    void addEntranceLog(Account account);
 }

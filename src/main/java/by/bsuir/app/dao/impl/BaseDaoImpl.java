@@ -2,6 +2,7 @@ package by.bsuir.app.dao.impl;
 
 import by.bsuir.app.util.HibernateUtil;
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 public class BaseDaoImpl {
     private static Session session;
@@ -9,10 +10,11 @@ public class BaseDaoImpl {
 
 
     public int hqlTruncate(String myTable){
+
         session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
 
-        session.createSQLQuery("truncate table bank").executeUpdate();
+        session.createSQLQuery("truncate table Mark").executeUpdate();
 
         session.getTransaction().commit();
         session.close();

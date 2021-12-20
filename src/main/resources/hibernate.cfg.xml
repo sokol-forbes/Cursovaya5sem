@@ -7,29 +7,29 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/bank?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">1234</property>
+        <property name="connection.password">12345</property>
         <property name="connection.autocommit">true</property>
+
 
         <property name="show_sql">true</property>
 
         <property name="connection.pool_size">10</property>
 
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="current_session_context_class">thread</property>
-        <!--        <property name="format_sql">true</property>-->
+<!--        <property name="format_sql">true</property>-->
         <mapping class="by.bsuir.app.entity.Account"/>
-        <mapping class="by.bsuir.app.entity.Contract"/>
-        <mapping class="by.bsuir.app.entity.PersonalData"/>
-        <mapping class="by.bsuir.app.entity.Credit"/>
-        <mapping class="by.bsuir.app.entity.Employee"/>
         <mapping class="by.bsuir.app.entity.PassportData"/>
-        <mapping class="by.bsuir.app.entity.User"/>
-
+        <mapping class="by.bsuir.app.entity.HistoryLog"/>
+        <mapping class="by.bsuir.app.entity.Contract"/>
+        <mapping class="by.bsuir.app.entity.CreditInfo"/>
+        <mapping class="by.bsuir.app.entity.Currency"/>
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
     </session-factory>
 </hibernate-configuration>
 
-        <!--<property name="by.bsuir.app.util.connection.username">root</property>-->
-        <!--<property name="by.bsuir.app.util.connection.password">12345</property>-->
+<!--<property name="connection.username">root</property>-->
+<!--<property name="connection.password">12345</property>-->

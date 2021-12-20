@@ -5,6 +5,7 @@ import by.bsuir.app.entity.BaseEntity;
 import java.util.List;
 
 public class Originator {
+
     private List<? extends BaseEntity> storage;
 
     public List<? extends BaseEntity> getStorage() {

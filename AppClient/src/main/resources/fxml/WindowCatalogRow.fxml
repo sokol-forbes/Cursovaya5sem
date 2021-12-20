@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="128.0" prefWidth="550.0" style="-fx-border-radius: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.submenu.CatalogRowController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <HBox alignment="CENTER" layoutY="14.0" prefHeight="127.0" prefWidth="577.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="92.0" fitWidth="87.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/products/clipboard.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="id_label_hide" prefHeight="14.0" prefWidth="13.0" text="ID" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator opacity="0.49" orientation="VERTICAL" prefHeight="127.0" prefWidth="13.0" />
+            <VBox prefHeight="110.0" prefWidth="140.0">
+               <children>
+                  <Label text="Наименование:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Категория:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Количество:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Владелец:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Стоимость:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="Общая оценка:" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="121.0" prefWidth="180.0">
+               <children>
+                  <Label fx:id="product_label" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="category_label" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="quantity_label" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="owner_label" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_label" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label fx:id="rate_label" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+            <Separator opacity="0.49" orientation="VERTICAL" prefHeight="127.0" prefWidth="0.0" />
+            <VBox alignment="CENTER" prefHeight="127.0" prefWidth="102.0">
+               <children>
+                  <Hyperlink fx:id="comparison_add_button" prefHeight="41.0" prefWidth="71.0" text="Добавить в сравнение" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="war_label" text="Добавлено" textFill="#fa7878" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="estimate" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="71.0" text="Оценить" textAlignment="CENTER" wrapText="true" />
+                  <Hyperlink fx:id="feedback_button" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="71.0" text="Отзыв" textAlignment="CENTER" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator layoutX="4.0" layoutY="124.0" opacity="0.5" prefHeight="2.0" prefWidth="543.0">
+         <effect>
+            <Lighting diffuseConstant="1.75" specularConstant="1.42" specularExponent="38.13" surfaceScale="7.76">
+               <bumpInput>
+                  <Shadow blurType="TWO_PASS_BOX" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Separator>
+   </children>
+</AnchorPane>

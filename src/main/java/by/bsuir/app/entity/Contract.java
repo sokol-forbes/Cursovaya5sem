@@ -1,35 +1,21 @@
 package by.bsuir.app.entity;
 
-import lombok.*;
-import lombok.experimental.FieldDefaults;
+import lombok.Data;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import java.io.Serializable;
+import java.math.BigDecimal;
 import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Data
-@FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Table(name = "contract", schema = "bank")
-public class Contract extends BaseEntity implements Serializable {
-    static final long serialVersionUID = 42L;
+public class Contract extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    @Column(name = "date_of_signing")
-    Date dateOfSigning;
-    String number;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "credit_id")
-    @NotNull
-    Credit credit;
+    private Long id;
+    private BigDecimal amount;
 
-    @OneToMany
-    @JoinColumn(name = "employee_id")
-    Employee employee;
+    @Column(name = "date_of_signing")
+    private Date dateOfSigning;
 
 }

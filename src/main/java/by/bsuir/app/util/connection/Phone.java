@@ -6,7 +6,6 @@ import lombok.experimental.FieldDefaults;
 import java.io.*;
 import java.net.Socket;
 
-
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public final class Phone {
     ObjectInputStream ois;
@@ -43,4 +42,5 @@ public final class Phone {
         ois.close();
         oos.close();
     }
+
 }

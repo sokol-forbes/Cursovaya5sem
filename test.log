@@ -1,0 +1,15 @@
+b.b.a.u.Server [INFO ] 2021-12-02 01:27:05.860 [Thread-0] - ������ �������.
+b.b.a.u.Server [INFO ] 2021-12-02 01:27:05.870 [Thread-0] - ������� ����: 5556
+b.b.a.u.Server [INFO ] 2021-12-02 01:28:14.578 [Thread-0] - Сервер запущен.
+b.b.a.u.Server [INFO ] 2021-12-02 01:28:14.582 [Thread-0] - Текущий порт: 5556
+b.b.a.u.Server [INFO ] 01:40:56 - Сервер запущен.
+b.b.a.u.Server [INFO ] 01:40:56 - Текущий порт: 5556
+b.b.a.u.Server [INFO ] 01:42:32 - Сервер запущен.
+b.b.a.u.Server [INFO ] 01:42:32 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 01:42:39 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 01:42:39 - Клиент подключился: Socket[addr=/127.0.0.1,port=50233,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 01:42:42 - REQUEST: Client_1 - AUTHORISATION - User(id=null, login=1, password=1, email=null, isBlocked=false, role=null, data=null, logs=null, feedbacks=null)
+o.j.l.LoggerProviders [DEBUG] 01:42:43 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.c.ClientHandler [INFO ] 01:42:48 - RESPONSE: Client_1 - OK - UNDEFINED
+b.b.a.u.c.ClientHandler [ERROR] 01:42:51 - Connection reset
+b.b.a.ServerRunner [INFO ] 01:42:51 - Текущее количество подключений: 0

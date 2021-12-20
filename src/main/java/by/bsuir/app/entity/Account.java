@@ -1,47 +1,55 @@
 package by.bsuir.app.entity;
 
-import lombok.*;
-import lombok.experimental.FieldDefaults;
-import org.hibernate.annotations.Proxy;
+import lombok.Data;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
-import java.io.Serializable;
+import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Data
-@FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Proxy(lazy = false)
-public class Account extends BaseEntity implements Serializable {
+public class Account extends BaseEntity {
+
     static final long serialVersionUID = 42L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    @Column(nullable = false, length = 45)
-    String login;
-    @Column(nullable = false, length = 45)
-    String password;
-    @Column(nullable = false, length = 45)
-    String email;
+    private Long id;
+    private String login;
+    private String password;
+    private String email;
+    private String role;
 
-    String role;
+    @Column(name = "is_blocked")
+    private boolean isBlocked;
 
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn (name="user_id")
-//    @NotNull
-//    User user;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "personal_id")
+    private PassportData data;
 
-    public Account(Long id, String login, String password){
-        this.id =id;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "account_id")
+    List<HistoryLog> logs;
+
+
+    public Account() {
+    }
+
+    public Account(Long id, String login, String password) {
+        this.id = id;
         this.login = login;
         this.password = password;
     }
 
-    public Account(String  login) {
+    public void addLog(HistoryLog log) {
+        if (logs == null)
+            logs = new ArrayList<>();
 
-        super();
-        this.login=login;
+        logs.add(log);
     }
+
 }

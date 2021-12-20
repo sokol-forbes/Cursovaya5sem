@@ -36,7 +36,7 @@ public class ClientHandler extends Thread {
 
                 requestAction = phone.read();
                 requestObject = phone.readObject();
-                log.error(ConstantsMSG.REQUEST_MSG + this.getName() + " - " + requestAction + " - " + requestObject);
+                log.info(ConstantsMSG.REQUEST_MSG + this.getName() + " - " + requestAction + " - " + requestObject);
 
                 Object response = null;
                 Status responseStatus = Status.OK;
@@ -56,7 +56,7 @@ public class ClientHandler extends Thread {
                     phone.sendObject(response);
                 }
 
-                log.error(ConstantsMSG.RESPONSE_MSG + this.getName() + " - " + responseStatus + " - " + response);
+                log.info(ConstantsMSG.RESPONSE_MSG + this.getName() + " - " + responseStatus + " - " + response);
 
             } catch (IOException | ClassNotFoundException e) {
                 log.error(e.getMessage());
@@ -73,3 +73,6 @@ public class ClientHandler extends Thread {
         }
     }
 }
+
+//TODO Заменить на COMMAND
+

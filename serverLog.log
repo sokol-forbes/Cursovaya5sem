@@ -1,0 +1,208 @@
+b.b.a.u.Server [INFO ] 01:56:54 - Сервер запущен.
+b.b.a.u.Server [INFO ] 01:56:54 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 01:56:55 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 01:56:55 - Клиент подключился: Socket[addr=/127.0.0.1,port=50316,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [ERROR] 01:57:12 - Connection reset
+b.b.a.ServerRunner [INFO ] 01:57:12 - Текущее количество подключений: 0
+o.j.l.LoggerProviders [DEBUG] 11:19:59 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.Server [INFO ] 22:41:49 - Сервер запущен.
+b.b.a.u.Server [INFO ] 22:41:49 - Текущий порт: 5556
+b.b.a.u.Server [INFO ] 22:45:34 - Сервер запущен.
+b.b.a.u.Server [INFO ] 22:45:34 - Текущий порт: 5556
+b.b.a.u.Server [INFO ] 23:53:06 - Сервер запущен.
+b.b.a.u.Server [INFO ] 23:53:06 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 23:56:05 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 23:56:05 - Клиент подключился: Socket[addr=/127.0.0.1,port=56039,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [ERROR] 23:56:21 - by.bsuir.app.entity.Account; local class incompatible: stream classdesc serialVersionUID = -5909287635109432092, local class serialVersionUID = 7096895138213013182
+b.b.a.ServerRunner [INFO ] 23:56:21 - Текущее количество подключений: 0
+b.b.a.u.Server [INFO ] 00:32:25 - Сервер запущен.
+b.b.a.u.Server [INFO ] 00:32:25 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 00:36:25 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 00:36:25 - Клиент подключился: Socket[addr=/127.0.0.1,port=49969,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [ERROR] 00:36:28 - by.bsuir.app.entity.Account; local class incompatible: stream classdesc serialVersionUID = -9004295597668996250, local class serialVersionUID = 3128249162173118717
+b.b.a.ServerRunner [INFO ] 00:36:28 - Текущее количество подключений: 0
+b.b.a.u.Server [INFO ] 00:37:15 - Сервер запущен.
+b.b.a.u.Server [INFO ] 00:37:15 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 00:37:17 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 00:37:17 - Клиент подключился: Socket[addr=/127.0.0.1,port=49979,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 00:37:20 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+o.j.l.LoggerProviders [DEBUG] 00:37:20 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 00:37:22 - Unable to load class [by.bsuir.app.entity.User]
+b.b.a.d.i.AccountDaoImpl [ERROR] 00:37:22 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 00:37:22 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 00:38:07 - Сервер запущен.
+b.b.a.u.Server [INFO ] 00:38:07 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 00:38:12 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 00:38:12 - Клиент подключился: Socket[addr=/127.0.0.1,port=49989,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 00:38:15 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+o.j.l.LoggerProviders [DEBUG] 00:38:15 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 00:38:16 - Could not determine type for: java.util.Collection, at table: personal_data, for columns: [org.hibernate.mapping.Column(accountsById)]
+b.b.a.d.i.AccountDaoImpl [ERROR] 00:38:16 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 00:38:16 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 00:38:43 - Сервер запущен.
+b.b.a.u.Server [INFO ] 00:38:43 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 00:38:44 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 00:38:44 - Клиент подключился: Socket[addr=/127.0.0.1,port=49997,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 00:38:47 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, personalDataByPassportId=null, contractsById=null, contractsById_0=null, historyLogsById=null)
+o.j.l.LoggerProviders [DEBUG] 00:38:47 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 00:38:48 - Could not determine type for: java.util.Collection, at table: Account, for columns: [org.hibernate.mapping.Column(contractsById)]
+b.b.a.d.i.AccountDaoImpl [ERROR] 00:38:48 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 00:38:48 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 04:31:24 - Сервер запущен.
+b.b.a.u.Server [INFO ] 04:31:24 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 04:31:28 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 04:31:28 - Клиент подключился: Socket[addr=/127.0.0.1,port=55048,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 04:31:32 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 04:31:32 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 04:31:33 - @OneToOne or @ManyToOne on by.bsuir.app.entity.Account.data references an unknown entity: by.bsuir.app.entity.PassportData
+b.b.a.d.i.AccountDaoImpl [ERROR] 04:31:33 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 04:31:33 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.c.ClientHandler [ERROR] 04:31:55 - Connection reset
+b.b.a.ServerRunner [INFO ] 04:31:55 - Текущее количество подключений: 0
+b.b.a.u.Server [INFO ] 04:32:26 - Сервер запущен.
+b.b.a.u.Server [INFO ] 04:32:26 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 04:32:27 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 04:32:27 - Клиент подключился: Socket[addr=/127.0.0.1,port=55056,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 04:32:32 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 04:32:32 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 04:32:33 - @OneToOne or @ManyToOne on by.bsuir.app.entity.Account.data references an unknown entity: by.bsuir.app.entity.PassportData
+b.b.a.d.i.AccountDaoImpl [ERROR] 04:32:33 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 04:32:33 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 04:33:21 - Сервер запущен.
+b.b.a.u.Server [INFO ] 04:33:21 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 04:33:23 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 04:33:23 - Клиент подключился: Socket[addr=/127.0.0.1,port=55064,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 04:33:27 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 04:33:27 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 04:33:27 - @OneToOne or @ManyToOne on by.bsuir.app.entity.Account.data references an unknown entity: by.bsuir.app.entity.PassportData
+b.b.a.d.i.AccountDaoImpl [ERROR] 04:33:27 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 04:33:27 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 05:03:49 - Сервер запущен.
+b.b.a.u.Server [INFO ] 05:03:49 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 05:03:50 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 05:03:50 - Клиент подключился: Socket[addr=/127.0.0.1,port=55366,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 05:03:57 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 05:03:57 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 05:03:58 - Error accessing stax stream
+b.b.a.d.i.AccountDaoImpl [ERROR] 05:03:58 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 05:03:58 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:09:14 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:09:14 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:09:30 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:09:30 - Клиент подключился: Socket[addr=/127.0.0.1,port=59696,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:09:37 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:09:37 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 08:09:38 - Error accessing stax stream
+b.b.a.d.i.AccountDaoImpl [ERROR] 08:09:38 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 08:09:38 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:10:38 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:10:38 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:10:41 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:10:41 - Клиент подключился: Socket[addr=/127.0.0.1,port=59706,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:10:46 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:10:47 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 08:10:49 - @OneToOne or @ManyToOne on by.bsuir.app.entity.Account.data references an unknown entity: by.bsuir.app.entity.PassportData
+b.b.a.d.i.AccountDaoImpl [ERROR] 08:10:49 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 08:10:49 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:11:18 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:11:18 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:11:21 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:11:21 - Клиент подключился: Socket[addr=/127.0.0.1,port=59718,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:11:26 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:11:26 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.HibernateUtil [ERROR] 08:11:27 - Use of @OneToMany or @ManyToMany targeting an unmapped class: by.bsuir.app.entity.Account.logs[by.bsuir.app.entity.HistoryLog]
+b.b.a.d.i.AccountDaoImpl [ERROR] 08:11:27 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 08:11:27 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:11:43 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:11:43 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:11:45 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:11:45 - Клиент подключился: Socket[addr=/127.0.0.1,port=59726,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:11:52 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=11, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:11:52 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+o.h.e.j.s.SqlExceptionHelper [ERROR] 08:11:53 - Unknown column 'passportda2_.dateOfBirth' in 'field list'
+b.b.a.d.i.AccountDaoImpl [ERROR] 08:11:53 - could not extract ResultSet
+b.b.a.u.c.ClientHandler [INFO ] 08:11:53 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:13:30 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:13:30 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:13:31 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:13:31 - Клиент подключился: Socket[addr=/127.0.0.1,port=59735,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:13:39 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:13:39 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+o.h.e.j.s.SqlExceptionHelper [ERROR] 08:13:40 - Unknown column 'passportda2_.idenNumber' in 'field list'
+b.b.a.d.i.AccountDaoImpl [ERROR] 08:13:40 - could not extract ResultSet
+b.b.a.u.c.ClientHandler [INFO ] 08:13:40 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:14:37 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:14:37 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:14:37 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:14:37 - Клиент подключился: Socket[addr=/127.0.0.1,port=59743,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:14:46 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:14:46 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+o.h.e.j.s.SqlExceptionHelper [ERROR] 08:14:47 - Unknown column 'logs3_.accountByAccountId' in 'field list'
+b.b.a.d.i.AccountDaoImpl [ERROR] 08:14:47 - could not extract ResultSet
+b.b.a.u.c.ClientHandler [INFO ] 08:14:47 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.Server [INFO ] 08:15:55 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:15:55 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:15:57 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:15:57 - Клиент подключился: Socket[addr=/127.0.0.1,port=59754,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:16:01 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:16:01 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.c.ClientHandler [INFO ] 08:16:02 - RESPONSE: Client_1 - OK - ADMIN
+b.b.a.u.c.ClientHandler [ERROR] 08:16:17 - Connection reset
+b.b.a.ServerRunner [INFO ] 08:16:17 - Текущее количество подключений: 0
+b.b.a.u.Server [INFO ] 08:24:42 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:24:42 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:24:45 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:24:45 - Клиент подключился: Socket[addr=/127.0.0.1,port=59767,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:24:51 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=2, password=2, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:24:51 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.c.ClientHandler [INFO ] 08:24:53 - RESPONSE: Client_1 - OK - USER
+b.b.a.u.c.ClientHandler [ERROR] 08:24:57 - Connection reset
+b.b.a.ServerRunner [INFO ] 08:24:57 - Текущее количество подключений: 0
+b.b.a.u.Server [INFO ] 08:27:54 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:27:54 - Текущий порт: 5556
+b.b.a.u.Server [INFO ] 08:28:29 - Сервер запущен.
+b.b.a.u.Server [INFO ] 08:28:29 - Текущий порт: 5556
+b.b.a.ServerRunner [INFO ] 08:28:31 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 08:28:31 - Клиент подключился: Socket[addr=/127.0.0.1,port=59787,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 08:28:37 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 08:28:37 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+b.b.a.u.c.ClientHandler [INFO ] 08:28:38 - RESPONSE: Client_1 - OK - ADMIN
+b.b.a.u.c.ClientHandler [INFO ] 08:28:42 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+b.b.a.u.c.ClientHandler [INFO ] 08:28:42 - RESPONSE: Client_1 - OK - ADMIN
+b.b.a.u.c.ClientHandler [INFO ] 08:29:04 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+b.b.a.u.c.ClientHandler [INFO ] 08:29:04 - RESPONSE: Client_1 - OK - ADMIN
+b.b.a.u.c.ClientHandler [ERROR] 08:29:26 - Connection reset
+b.b.a.ServerRunner [INFO ] 08:29:26 - Текущее количество подключений: 0
+b.b.a.u.Server [INFO ] 09:37:46 - Сервер запущен.
+b.b.a.u.Server [INFO ] 09:37:46 - Текущий порт: 5556
+b.b.a.u.Server [ERROR] 09:41:52 - Address already in use: bind Текущий порт: 5556
+b.b.a.u.Server [INFO ] 09:41:52 - Сервер запущен.
+b.b.a.u.Server [INFO ] 09:41:52 - Текущий порт: 5557
+b.b.a.ServerRunner [INFO ] 09:45:46 - Текущее количество подключений: 1
+b.b.a.u.Server [INFO ] 09:45:46 - Клиент подключился: Socket[addr=/127.0.0.1,port=49357,localport=5556] Текущее количество подключений: 1
+b.b.a.u.c.ClientHandler [INFO ] 09:45:53 - REQUEST: Client_1 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.j.l.LoggerProviders [DEBUG] 09:45:54 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+o.h.e.j.s.SqlExceptionHelper [ERROR] 09:45:54 - Access denied for user 'root'@'localhost' (using password: YES)
+b.b.a.u.HibernateUtil [ERROR] 09:45:54 - Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+b.b.a.d.i.AccountDaoImpl [ERROR] 09:45:54 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 09:45:54 - RESPONSE: Client_1 - OK - UNREGISTERED
+b.b.a.u.c.ClientHandler [INFO ] 09:46:14 - REQUEST: Client_1 - PASSWORD_RECOVERY - Account(id=null, login=1, password=, email=1, role=null, isBlocked=false, data=null, logs=null)
+o.h.e.j.s.SqlExceptionHelper [ERROR] 09:46:14 - Access denied for user 'root'@'localhost' (using password: YES)
+b.b.a.u.HibernateUtil [ERROR] 09:46:14 - Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+b.b.a.d.i.AccountDaoImpl [ERROR] 09:46:14 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.Server [ERROR] 09:47:54 - Address already in use: bind Текущий порт: 5556
+b.b.a.u.Server [INFO ] 09:47:54 - Сервер запущен.
+b.b.a.u.Server [INFO ] 09:47:54 - Текущий порт: 5557
+b.b.a.ServerRunner [INFO ] 09:48:02 - Текущее количество подключений: 2
+b.b.a.u.Server [INFO ] 09:48:02 - Клиент подключился: Socket[addr=/127.0.0.1,port=49694,localport=5556] Текущее количество подключений: 2
+b.b.a.u.c.ClientHandler [INFO ] 09:48:06 - REQUEST: Client_2 - AUTHORISATION - Account(id=null, login=1, password=1, email=null, role=null, isBlocked=false, data=null, logs=null)
+o.h.e.j.s.SqlExceptionHelper [ERROR] 09:48:06 - Access denied for user 'root'@'localhost' (using password: YES)
+b.b.a.u.HibernateUtil [ERROR] 09:48:06 - Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+b.b.a.d.i.AccountDaoImpl [ERROR] 09:48:06 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+b.b.a.u.c.ClientHandler [INFO ] 09:48:06 - RESPONSE: Client_2 - OK - UNREGISTERED
+b.b.a.u.c.ClientHandler [INFO ] 09:48:45 - REQUEST: Client_2 - REGISTRATION - Account(id=null, login=sokol, password=123456, email=sasha.sokolovsky01@gmail.com, role=null, isBlocked=false, data=null, logs=null)
+o.h.e.j.s.SqlExceptionHelper [ERROR] 09:48:45 - Access denied for user 'root'@'localhost' (using password: YES)
+b.b.a.u.HibernateUtil [ERROR] 09:48:45 - Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+b.b.a.d.i.AccountDaoImpl [ERROR] 09:48:45 - Cannot invoke "org.hibernate.SessionFactory.openSession()" because the return value of "by.bsuir.app.util.HibernateUtil.getSessionFactory()" is null
+o.h.e.j.s.SqlExceptionHelper [ERROR] 09:48:45 - Access denied for user 'root'@'localhost' (using password: YES)
+b.b.a.u.HibernateUtil [ERROR] 09:48:45 - Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
